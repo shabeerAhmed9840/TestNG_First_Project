@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test name="Test(failed)">
+    <parameter name="pass" value="123456"/>
+    <parameter name="user" value="user@gmail.com"/>
+    <classes>
+      <class name="testng.A">
+        <methods>
+          <include name="endTime"/>
+          <include name="launch"/>
+          <include name="startTime"/>
+          <include name="quit"/>
+          <include name="tc3" invocation-numbers="0"/>
+          <include name="tc4" invocation-numbers="0"/>
+          <include name="tc2"/>
+        </methods>
+      </class> <!-- testng.A -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
