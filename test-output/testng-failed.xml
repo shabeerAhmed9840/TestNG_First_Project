@@ -3,15 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="testng.First">
+      <class name="screenShotFailed.ScreenShotFailed">
         <methods>
-          <include name="startTime"/>
-          <include name="quit"/>
-          <include name="endTime"/>
-          <include name="tc1"/>
-          <include name="tc3"/>
+          <include name="testCase1"/>
+          <include name="startBrowser"/>
+          <include name="closeBrowser"/>
+          <include name="testCase2"/>
         </methods>
-      </class> <!-- testng.First -->
+      </class> <!-- screenShotFailed.ScreenShotFailed -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

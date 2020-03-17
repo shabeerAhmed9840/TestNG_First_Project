@@ -1,27 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="2" ignored="0" total="3" passed="1">
+<testng-results skipped="0" failed="2" ignored="0" total="2" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="292775" started-at="2020-01-05T17:26:15Z" finished-at="2020-01-05T17:31:08Z">
+  <suite name="Default suite" duration-ms="61889" started-at="2020-02-02T16:20:07Z" finished-at="2020-02-02T16:21:08Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="292775" started-at="2020-01-05T17:26:15Z" finished-at="2020-01-05T17:31:08Z">
-      <class name="testng.First">
-        <test-method status="PASS" signature="startTime()[pri:0, instance:testng.First@6f7fd0e6]" name="startTime" is-config="true" duration-ms="40" started-at="2020-01-05T22:56:15Z" finished-at="2020-01-05T22:56:15Z">
+    <test name="Default test" duration-ms="61889" started-at="2020-02-02T16:20:07Z" finished-at="2020-02-02T16:21:08Z">
+      <class name="screenShotFailed.ScreenShotFailed">
+        <test-method status="PASS" signature="startBrowser()[pri:0, instance:screenShotFailed.ScreenShotFailed@6f7fd0e6]" name="startBrowser" is-config="true" duration-ms="17546" started-at="2020-02-02T21:50:07Z" finished-at="2020-02-02T21:50:24Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- startTime -->
-        <test-method status="FAIL" signature="tc1()[pri:0, instance:testng.First@6f7fd0e6]" name="tc1" duration-ms="40160" started-at="2020-01-05T22:56:15Z" finished-at="2020-01-05T22:56:55Z">
+        </test-method> <!-- startBrowser -->
+        <test-method status="FAIL" signature="testCase1()[pri:0, instance:screenShotFailed.ScreenShotFailed@6f7fd0e6]" name="testCase1" duration-ms="21525" started-at="2020-02-02T21:50:24Z" finished-at="2020-02-02T21:50:46Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[The following asserts failed:
-	expected [ahmedshabeer1996@gmail.co] but found [ahmedshabeer1996@gmail.com]]]>
+	test case 1 fail expected [zyx] but found [xyz],
+	test case 1 fail expected [zyx] but found [xyz]]]>
             </message>
             <full-stacktrace>
               <![CDATA[java.lang.AssertionError: The following asserts failed:
-	expected [ahmedshabeer1996@gmail.co] but found [ahmedshabeer1996@gmail.com]
+	test case 1 fail expected [zyx] but found [xyz],
+	test case 1 fail expected [zyx] but found [xyz]
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
-	at testng.First.tc1(First.java:63)
+	at screenShotFailed.ScreenShotFailed.testCase1(ScreenShotFailed.java:35)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -52,44 +54,28 @@
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tc1 -->
-        <test-method status="PASS" signature="startTime()[pri:0, instance:testng.First@6f7fd0e6]" name="startTime" is-config="true" duration-ms="0" started-at="2020-01-05T22:56:15Z" finished-at="2020-01-05T22:56:15Z">
+        </test-method> <!-- testCase1 -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:screenShotFailed.ScreenShotFailed@6f7fd0e6]" name="closeBrowser" is-config="true" duration-ms="1248" started-at="2020-02-02T21:50:48Z" finished-at="2020-02-02T21:50:49Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- startTime -->
-        <test-method status="PASS" signature="startTime()[pri:0, instance:testng.First@6f7fd0e6]" name="startTime" is-config="true" duration-ms="0" started-at="2020-01-05T22:56:56Z" finished-at="2020-01-05T22:56:56Z">
+        </test-method> <!-- closeBrowser -->
+        <test-method status="PASS" signature="startBrowser()[pri:0, instance:screenShotFailed.ScreenShotFailed@6f7fd0e6]" name="startBrowser" is-config="true" duration-ms="17057" started-at="2020-02-02T21:50:49Z" finished-at="2020-02-02T21:51:06Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- startTime -->
-        <test-method status="PASS" signature="tc2()[pri:0, instance:testng.First@6f7fd0e6]" name="tc2" duration-ms="77000" started-at="2020-01-05T22:56:56Z" finished-at="2020-01-05T22:58:13Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tc2 -->
-        <test-method status="PASS" signature="endTime()[pri:0, instance:testng.First@6f7fd0e6]" name="endTime" is-config="true" duration-ms="0" started-at="2020-01-05T22:56:56Z" finished-at="2020-01-05T22:56:56Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- endTime -->
-        <test-method status="PASS" signature="endTime()[pri:0, instance:testng.First@6f7fd0e6]" name="endTime" is-config="true" duration-ms="4" started-at="2020-01-05T22:58:13Z" finished-at="2020-01-05T22:58:13Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- endTime -->
-        <test-method status="PASS" signature="startTime()[pri:0, instance:testng.First@6f7fd0e6]" name="startTime" is-config="true" duration-ms="2" started-at="2020-01-05T22:58:13Z" finished-at="2020-01-05T22:58:13Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startTime -->
-        <test-method status="FAIL" signature="tc3()[pri:0, instance:testng.First@6f7fd0e6]" name="tc3" duration-ms="174428" started-at="2020-01-05T22:58:13Z" finished-at="2020-01-05T23:01:07Z">
+        </test-method> <!-- startBrowser -->
+        <test-method status="FAIL" signature="testCase2()[pri:0, instance:screenShotFailed.ScreenShotFailed@6f7fd0e6]" name="testCase2" duration-ms="516" started-at="2020-02-02T21:51:06Z" finished-at="2020-02-02T21:51:07Z">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[The following asserts failed:
-	expected [true] but found [false],
-	expected [true] but found [false]]]>
+              <![CDATA[testcase 2 failed expected [zyx] but found [xyz]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: The following asserts failed:
-	expected [true] but found [false],
-	expected [true] but found [false]
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
-	at testng.First.tc3(First.java:118)
+              <![CDATA[java.lang.AssertionError: testcase 2 failed expected [zyx] but found [xyz]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at screenShotFailed.ScreenShotFailed.testCase2(ScreenShotFailed.java:43)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -120,16 +106,12 @@
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tc3 -->
-        <test-method status="PASS" signature="quit()[pri:0, instance:testng.First@6f7fd0e6]" name="quit" is-config="true" duration-ms="944" started-at="2020-01-05T23:01:07Z" finished-at="2020-01-05T23:01:08Z">
+        </test-method> <!-- testCase2 -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:screenShotFailed.ScreenShotFailed@6f7fd0e6]" name="closeBrowser" is-config="true" duration-ms="1218" started-at="2020-02-02T21:51:07Z" finished-at="2020-02-02T21:51:08Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- quit -->
-        <test-method status="PASS" signature="endTime()[pri:0, instance:testng.First@6f7fd0e6]" name="endTime" is-config="true" duration-ms="0" started-at="2020-01-05T23:01:07Z" finished-at="2020-01-05T23:01:07Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- endTime -->
-      </class> <!-- testng.First -->
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- screenShotFailed.ScreenShotFailed -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

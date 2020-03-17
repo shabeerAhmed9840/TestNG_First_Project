@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Suite">
-  <test name="Test">
-  <parameter name="user" value="user@gmail.com"></parameter>
-  <parameter name="pass" value="123456"></parameter>
+<suite name="Suite" parallel= "methods">
+  <test name="Test" thread-count ="5">
     <classes>
-      <class name="testng.A"/>
+      <class name="parallelDemo.MainDemo"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

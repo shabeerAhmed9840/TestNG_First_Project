@@ -40,18 +40,23 @@ public class B {
 		Date d = new Date();
 		System.out.println(d);
 	}
-	
-	  @Test(groups="start") public void ff() { System.setProperty(
-	  "webdriver.chrome.driver","C:\\Users\\SHABEER AHMED\\eclipse-workspace\\TestNGDemo\\driver\\chromedriver.exe"
-	  );
-	  
-	  driver=new ChromeDriver(); driver.get("https://www.facebook.com/");
-	  WebElement e = driver.findElement(By.id("email")); e.sendKeys("xyz@gmail");
-	  
-	  WebElement f = driver.findElement(By.id("pass")); f.sendKeys("12345678");
-	  
-	  WebElement l = driver.findElement(By.id("loginbutton")); l.click(); }
-	 
+
+	@Test(groups = "start")
+	public void ff() {
+		System.setProperty("webdriver.chrome.driver",
+				"C:\\Users\\SHABEER AHMED\\eclipse-workspace\\TestNGDemo\\driver\\chromedriver.exe");
+
+		driver = new ChromeDriver();
+		driver.get("https://www.facebook.com/");
+		WebElement e = driver.findElement(By.id("email"));
+		e.sendKeys("xyz@gmail");
+
+		WebElement f = driver.findElement(By.id("pass"));
+		f.sendKeys("12345678");
+
+		WebElement l = driver.findElement(By.id("loginbutton"));
+		l.click();
+	}
 
 	@Test(dataProvider = "sample")
 	private void tc2(String s1, String s2, String s3, String s4) {
@@ -79,8 +84,7 @@ public class B {
 
 	@DataProvider(name = "sample")
 	public Object[][] data() {
-		return new Object[][] { { "fghj", "vbnm,", "dfgh", "wertyu" }, 
-								{ "zxcvb", "bnm", "[pkjnh", "sdf" }
+		return new Object[][] { { "fghj", "vbnm,", "dfgh", "wertyu" }, { "zxcvb", "bnm", "[pkjnh", "sdf" }
 
 		};
 	}

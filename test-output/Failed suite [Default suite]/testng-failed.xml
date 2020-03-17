@@ -3,14 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Failed suite [Default suite]]">
   <test name="Default test(failed)(failed)">
     <classes>
-      <class name="testng.First">
+      <class name="reRunner.RerunnerDemo">
         <methods>
-          <include name="startTime"/>
-          <include name="quit"/>
-          <include name="endTime"/>
-          <include name="tc2"/>
+          <include name="tCase2"/>
         </methods>
-      </class> <!-- testng.First -->
+      </class> <!-- reRunner.RerunnerDemo -->
     </classes>
   </test> <!-- Default test(failed)(failed) -->
 </suite> <!-- Failed suite [Failed suite [Default suite]] -->

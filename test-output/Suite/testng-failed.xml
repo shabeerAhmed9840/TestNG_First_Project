@@ -1,21 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <test name="Test(failed)">
-    <parameter name="pass" value="123456"/>
-    <parameter name="user" value="user@gmail.com"/>
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="methods">
+  <test name="Test(failed)" parallel="methods">
     <classes>
-      <class name="testng.A">
+      <class name="parallelDemo.MainDemo">
         <methods>
-          <include name="endTime"/>
-          <include name="launch"/>
+          <include name="tc1"/>
           <include name="startTime"/>
-          <include name="quit"/>
-          <include name="tc3" invocation-numbers="0"/>
-          <include name="tc4" invocation-numbers="0"/>
-          <include name="tc2"/>
+          <include name="tc3"/>
+          <include name="endTime"/>
+          <include name="quitBrowser"/>
+          <include name="startBrowser"/>
         </methods>
-      </class> <!-- testng.A -->
+      </class> <!-- parallelDemo.MainDemo -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

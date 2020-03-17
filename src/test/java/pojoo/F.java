@@ -1,6 +1,8 @@
 package pojoo;
 
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.CacheLookup;
+import org.openqa.selenium.support.FindAll;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
@@ -10,13 +12,14 @@ public class F extends BaseClass{
 	public F() {
 		PageFactory.initElements(driver, this);
 	}
-	
+	@FindAll({
 	@FindBy(xpath="//input[@placeholder='First Name']")
+	})
 	private WebElement Firstname;
 	
 	@FindBy(xpath="//input[@placeholder='Middle Name']")
 	private WebElement Middlename;
-	
+	@CacheLookup
 	@FindBy(xpath="//input[@placeholder='Last Name']")
 	private WebElement lastname;
 	
